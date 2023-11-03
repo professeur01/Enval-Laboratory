@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dachboard</title>
+    <title>Commande</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -21,7 +21,7 @@
             <div class="sidebar">
                 <!-- Le contentu image -->
                 <div class="item__image">
-                    <img src="Logo/logo.png" alt="">
+                  <a href="dachboard.html"><img src="Logo/logo.png" alt=""></a>
                 </div>
                 <div class="list">
                     <!-- Debut de la list 1 -->
@@ -31,14 +31,14 @@
                             <li><a href="facture.html"><i class="fa-solid fa-peace"></i><span>Facture</span></a></li>
                             <li><a href="commande.html"><i class="fa-solid fa-cart-shopping"></i><span>Commande</span></a></li>
                             <li><a href="suivi.html"><i class="fa-solid fa-bag-shopping"></i><span>Suivi</span></a></li>
-                            <li><a href="service client"><i class="fa-solid fa-comment-dots"></i><span>Service client</span></a></li>
+                            <li><a href="serviceclient.html"><i class="fa-solid fa-comment-dots"></i><span>Service client</span></a></li>
                         </ul>
                     </div>
                     <!-- Fin de la list 1 -->
                     <!-- Debut de la list 2 -->
                     <div class="item__list2">
                         <ul class="item__ul1">
-                            <li><a href="#"><i class="fa-solid fa-gear"></i><span>Paramètres du compte</span></a></li>
+                            <li><a href="param-compte.html"><i class="fa-solid fa-gear"></i><span>Paramètres du compte</span></a></li>
                             <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Déconnexion</span></a> </li>
 
                         </ul>
@@ -64,7 +64,7 @@
                     </svg>
                 </div>
                 <div class="avatar">
-                    <img src="Logo/avatar.jpg" alt="Avatar d'utilisateur">
+                  <a href="index.html"><img src="Logo/avatar.jpg" alt="Avatar d'utilisateur"></a>
                 </div>
                 <!-- Fin des image a droite -->
 
@@ -73,223 +73,30 @@
             <div class="box__com">
                 <!-- debut du box -->
 
-                <div class="table__box" style="overflow-x:auto;">
-                    <table>
-                        <thead>
-                            <th style="font-size: 25px;letter-spacing: 1px;font-weight: 800;">Commande</th>
-                            <th colspan="4"><div class=" "style=""><label for="search-box">
-                                <input type="search-box" class=" search" aria-label="Search bar"placeholder="&#xF52A;" 
+                <div class="table__box">
+                    <table class="tab__com">
+                        <thead class="echa_com">
+                            <th><h3  class="echa_com_com"> Commande</h3></th>
+                            <th colspan="4"><div><label for="search-box">
+                                <input id="input_commande" type="search-box" class=" search" aria-label="Search bar"placeholder="&#xF52A;" 
                                  style="font-family: bootstrap-icons;"></label>
                               </div></th>
                             <th></th>
                             <th ></th>
                             <th ></th>
+                            <tr class="commande-titre-head">
+                                <td id="commande_com_title" class="head_com">Commande</td>
+                                <td id="commande_labo_title" class="head_laboc">Laboratoire</td>
+                                <td id="commande_date_title" class="head_datec ">Date</td>
+                                <td id="commande_status_title" class="head_status ">Status</td>
+                                <td class="head_cliquezc ">Cliquez pour voir le rapport</td>
+                            </tr>
                         </thead>
-                        <tr>
-                            <td style="font-size: 18px;width: 49rem;text-align: center;font-weight: bold;border-right: solid 1px;">Commande</td>
-                            <td style="font-size: 18px;width: 25em;padding: 0 40px 0 0;text-align: center;font-weight: bold;border-right: solid 1px;">Laboratoire</td>
-                            <td style="font-size: 18px;width:10em ;text-align: center;font-weight: bold;border-right: solid 1px;">Date</td>
-                            <td style="font-size: 18px;width:rem ;padding: 0 45px ;text-align: center;font-weight: bold;border-right: solid 1px;">Status</td>
-                            <td  style="font-size: 18px;width:30rem ;text-align: center;font-weight: bold;">Cliquez pour voir le rapport</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">Enval</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">10/03/2023</td>
-                            <td style="text-align: center;color: red;border-right: solid 1px #8f8a8a;">En cours</td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com"style="">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class=" btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
+                        <tbody>
+
+                      </tbody>
                     </table>
 
-                    
-                    <!-- <table>
-        <thead style="border-top: solid 1px ;border-color:rgba(211, 46, 46, 0.809);">
-          <div>
-            <tr>
-              <th class="">Commande</th>
-              <th class="" colspan="5">
-                <div class="container " style="display: flex;justify-content:end">
-                  <div class="input-group w-50 "style="width: 25vw!important;">
-                    <input type="search-box" class="form-control search" aria-label="Search bar"placeholder="&#xF52A;" 
-                     style="background-color:rgba(236, 231, 231, 0.376);font-family: bootstrap-icons;">
-                  </div>
-                </div>
-              </th>
-
-            </tr>
-          </div>
-        </thead><br>
-        <tbody style="border-color:rgba(187, 186, 186, 0.809);">
-          <tr>
-            <th class="ps-4" scope="row">Commande</th>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td class="text-center" style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);width: 19rem;">Laboratoire</td>
-            <td class="text-center" style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);">Date</td>
-            <td class="text-center" style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);">Status</td>
-            <td class="text-center" style="border-top: solid 1px;border-color:rgba(187, 186, 186, 0.809);width: 25rem;">Cliquez pour voir le rapport</td>
-          </tr>
-          <tr><br>
-            <th class="ps-4" scope="row">000112</th>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td class="text-center" style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);">Enval</td>
-            <td class="text-center" style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);">10/03/2023</td>
-            <td class="text-center" style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);color: red;">En cours</td>
-            <td class="text-center"><button class="btn w-50 fw-bolder btn_com"style="background-color:#1c849dde;;color:white;">Voir</button></td>
-          </tr>
-          <tr>
-            <th class="ps-4" scope="row">000112</th>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td class="text-center"><button class="btn w-50 fw-bold btn_com"style="background-color:#1c849dde;;color:white">Voir</button></td>
-          </tr>
-          <tr>
-            <th class="ps-4" scope="row">000112</th>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td class="text-center"><button class="btn w-50 fw-bold btn_com"style="background-color:#1c849dde;;color:white">Voir</button></td>
-          </tr>
-          <tr>
-            <th class="ps-4" scope="row">000112</th>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td class="text-center"><button class="btn w-50 fw-bold btn_com"style="background-color:#1c849dde;;color:white">Voir</button></td>
-          </tr>
-          <tr>
-            <th class="ps-4" scope="row">000112</th>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td class="text-center"><button class="btn w-50 fw-bold btn_com"style="background-color:#1c849dde;;color:white">Voir</button></td>
-          </tr>
-          <tr>
-            <th class="ps-4" scope="row">000112</th>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td class="text-center"><button class="btn w-50 fw-bold btn_com"style="background-color:#1c849dde;;color:white">Voir</button></td>
-          </tr>
-          <tr>
-            <th class="ps-4" scope="row">000112</th>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td class="text-center"><button class="btn w-50 fw-bold btn_com"style="background-color:#1c849dde;;color:white">Voir</button></td>
-          </tr>
-          <tr>
-            <th class="ps-4" scope="row">000112</th>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td class="text-center"><button class="btn w-50 fw-bold btn_com"style="background-color:#1c849dde;;color:white">Voir</button></td>
-          </tr>
-          <tr>
-            <th class="ps-4" scope="row">000112</th>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td style="border-right: solid 1px;border-color:rgba(187, 186, 186, 0.809);"></td>
-            <td class="text-center"><button class="btn w-50 fw-bold btn_com"style="background-color:#1c849dde;color:white">Voir</button></td>
-          </tr>
-          <tr style="border-color: rgb(255, 255, 255)!important;">
-            <td class="border-bottom;" scope="row"></td>
-            <td class="border-bottom;" style="border-right: solid 1px;border-color: rgba(171, 169, 169, 0.904);border-bottom:none;"></td>
-            <td class="border-bottom;" style="border-right: solid 1px;border-color: rgba(171, 169, 169, 0.904);border-bottom:none;"></td>
-            <td class="border-bottom;" style="border-right: solid 1px;border-color: rgba(171, 169, 169, 0.904);border-bottom:none;"></td>
-            <td class="border-bottom;" style="border-right: solid 1px;border-color: rgba(171, 169, 169, 0.904);border-bottom:none;"></td>
-            <td class="border-bottom;" ></td>
-          </tr>
-          <tr style="border-color: rgb(255, 255, 255)!important;">
-            <td class="border-bottom;" scope="row"></td>
-            <td class="border-bottom;" style="border-right: solid 1px;border-color: rgba(171, 169, 169, 0.904);border-bottom:none;"></td>
-            <td class="border-bottom;" style="border-right: solid 1px;border-color: rgba(171, 169, 169, 0.904);border-bottom:none;"></td>
-            <td class="border-bottom;" style="border-right: solid 1px;border-color: rgba(171, 169, 169, 0.904);border-bottom:none;"></td>
-            <td class="border-bottom;" style="border-right: solid 1px;border-color: rgba(171, 169, 169, 0.904);border-bottom:none;"></td>
-            <td class="border-bottom;" ></td>
-          </tr>
-          <tr style="border-color: rgb(255, 255, 255)!important;">
-            <td class="" scope="row"></td>
-            <td class="" style="border-right: solid 1px;border-color: rgba(171, 169, 169, 0.904);border-bottom:none;"></td>
-            <td class="" style="border-right: solid 1px;border-color: rgba(171, 169, 169, 0.904);border-bottom:none;"></td>
-            <td class="" style="border-right: solid 1px;border-color: rgba(171, 169, 169, 0.904);border-bottom:none;"></td>
-            <td class="" style="border-right: solid 1px;border-color: rgba(171, 169, 169, 0.904);border-bottom:none;"></td>
-            <td class="" ></td>
-          </tr>
-          <tr style="border-color: rgb(255, 255, 255)!important;">
-            <td class="" scope="row"></td>
-            <td class="" style="border-right: solid 1px;border-color: rgba(171, 169, 169, 0.904);border-bottom:none;"></td>
-            <td class="" style="border-right: solid 1px;border-color: rgba(171, 169, 169, 0.904);border-bottom:none;"></td>
-            <td class="" style="border-right: solid 1px;border-color: rgba(171, 169, 169, 0.904);border-bottom:none;"></td>
-            <td class="" style="border-right: solid 1px;border-color: rgba(171, 169, 169, 0.904);border-bottom:none;"></td>
-            <td class="" ></td>
-          </tr>
-        </tbody>
-      </table> -->
                 </div>
             </div>
 
@@ -300,6 +107,7 @@
     </div>
 
     <!-- Fin du conainer général -->
+    <script src="javascript/commande_tab.js"></script>
 </body>
 
 </html>

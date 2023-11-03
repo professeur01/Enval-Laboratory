@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dachboard</title>
+    <title>Facture</title>
     <link rel="stylesheet" href="style3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -21,7 +21,7 @@
             <div class="sidebar">
                 <!-- Le contentu image -->
                 <div class="item__image ">
-                    <img src="Logo/logo.png" alt="">
+                    <a href="dachboard.html"><img src="Logo/logo.png" alt=""></a>
                 </div>
                 <div class="list">
                     <!-- Debut de la list 1 -->
@@ -38,7 +38,7 @@
                     <!-- Debut de la list 2 -->
                     <div class="item__list2">
                         <ul class="item__ul1">
-                            <li><a href="#"><i class="fa-solid fa-gear"></i><span>Paramètres du compte</span></a></li>
+                            <li><a href="param-compte.html"><i class="fa-solid fa-gear"></i><span>Paramètres du compte</span></a></li>
                             <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Déconnexion</span></a> </li>
 
                         </ul>
@@ -64,7 +64,7 @@
                     </svg>
                 </div>
                 <div class="avatar ">
-                    <img src="Logo/avatar.jpg" alt="Avatar d'utilisateur">
+                    <a href="index.html"><img src="Logo/avatar.jpg" alt="Avatar d'utilisateur"></a>
                 </div>
                 <!-- Fin des image a droite -->
 
@@ -73,79 +73,27 @@
             <div class="box__fac">
                 <!-- debut du box -->
 
-                <div class="table__box" style="overflow-x:auto;">
-                    <table>
-                        <thead>
-                            <th style="font-size: 25px;letter-spacing: 1px;font-weight: 800;">Facture</th>
-                            <th colspan="3"><div class=" "style=""><label for="search-box">
-                                <input type="search-box" class=" search" aria-label="Search bar"placeholder="&#xF52A;" 
+                <div class="table__box">
+                    <table class="tab__fac">
+                        <thead class="echa_fac">
+                            <th ><h3 class="echa_fac_fac"> Facture</h3></th>
+                            <th colspan="3"><div><label for="input_facture">
+                                <input id="input_facture" type="search-box" class=" search search_fac" aria-label="Search bar"placeholder="&#xF52A;" 
                                  style="font-family: bootstrap-icons;"></label>
                               </div></th>
-                            <th></th>
                             <th ></th>
                             <th ></th>
+                            <th ></th>
+                            <tr class="facture-titre-head">
+                                <td id="facture_fac_title" class="head_fac">Facture </td>
+                                <td id="facture_fac_labo" class="head_labo">Laboratoire</td>
+                                <td id="facture_fac_datef" class="head_datef">Date</td>
+                                <td id="facture_fac_cliquezf" class="head_cliquezf">Cliquez pour voir le rapport</td>
+                            </tr>
                         </thead>
-                        <tr>
-                            <td style="font-size: 18px;width: 49rem;text-align: center;font-weight: bold;border-right: solid 1px;">Facture</td>
-                            <td style="font-size: 18px;width: 25em;padding: 0 40px 0 0;text-align: center;font-weight: bold;border-right: solid 1px;">Laboratoire</td>
-                            <td style="font-size: 18px;width:10em ;text-align: center;font-weight: bold;border-right: solid 1px;">Date</td>
-                        
-                            <td  style="font-size: 18px;width:30rem ;text-align: center;font-weight: bold;">Cliquez pour voir le rapport</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">Enval</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">10/03/2023</td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com"style="">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class=" btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">000112</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
+                        <tbody>
+                            
+                        </tbody>
                     </table>
 
                     
@@ -160,6 +108,7 @@
     </div>
 
     <!-- Fin du conainer général -->
+    <script src="./javascript/facture_tab.js"></script>
 </body>
 
 </html>

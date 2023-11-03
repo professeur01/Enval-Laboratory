@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    —
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page de connexion</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
-
-
-</head>
-
-<body>
+  <body>
     <section class="SS">
-        <div class="logo">
-            <img src="Logo/Enval logo.png" alt="page de connexion Enval" >
-        </div>
-        <div>
-            <input class="I1" type="email" name="" id="" placeholder="E-mail">
-        </div>
-        <div>
-            <input class="I2" type="password" name="" id="" placeholder="Mot de passe">
-        </div>
-        <div >
-            <a href="" class="f">Mot de passe oublié ?</a>
-        </div>
+      <div class="logo">
+        <img src="Logo/Enval logo.png" alt="page de connexion Enval" />
+      </div>
+      <div>
+        <input
+          class="I1"
+          type="text"
+          name=""
+          id="imput-identifiant"
+          placeholder="Identifiant"
+          required
+        />
+      </div>
+      <div class="input-2-link">
+        <input
+          class="I2"
+          type="password"
+          name=""
+          id="imput-mot-de-passe"
+          placeholder="Password"
+          required
+        />
+        <a id="forget-link" href="" class="f">Forgot your password ?</a>
+      </div>
 
-        <div>
-            <a href="dachboard.html">
-            <button class="button">
-                Connexion 
-
-            </button>
+      <div class="button-link" id="div-button-link">
+        <a id="link-connect" href="#">
+          <button class="button">Connexion</button>
         </a>
-        </div>
+      </div>
     </section>
-</body>
 
+    <div class="popup-password-incorrect">
+      <div class="haut-incorrect">Connexion</div>
+      <div class="bas-incorrect">
+        Oups !!! La combinaison l'identifiant / Password est incorrect
+      </div>
+    </div>
+
+    <div class="popup-password-banni">
+      <div class="haut-banni">Connexion</div>
+      <div class="bas-banni">
+        Oups !!! Votre compte est temporairement bloqué
+      </div>
+    </div>
+
+    <div class="popup-timer-deblockage">
+      <div class="haut-timer">Timer Deblockage</div>
+      <div class="bas-timer"><span>00:</span><span id="timer"></span></div>
+    </div>
+    <script src="javascript/auth.js" type="module"></script>
+  </body>
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dachboard</title>
+    <title>Suivi</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -21,7 +21,7 @@
             <div class="sidebar">
                 <!-- Le contentu image -->
                 <div class="item__image">
-                    <img src="Logo/logo.png" alt="">
+                    <a href="dachboard.html"><img src="Logo/logo.png" alt=""></a>
                 </div>
                 <div class="list">
                     <!-- Debut de la list 1 -->
@@ -31,14 +31,14 @@
                             <li><a href="facture.html"><i class="fa-solid fa-peace"></i><span>Facture</span></a></li>
                             <li><a href="commande.html"><i class="fa-solid fa-cart-shopping"></i><span>Commande</span></a></li>
                             <li><a href="suivi.html"><i class="fa-solid fa-bag-shopping"></i><span>Suivi</span></a></li>
-                            <li><a href="service client"><i class="fa-solid fa-comment-dots"></i><span>Service client</span></a></li>
+                            <li><a href="serviceclient.html"><i class="fa-solid fa-comment-dots"></i><span>Service client</span></a></li>
                         </ul>
                     </div>
                     <!-- Fin de la list 1 -->
                     <!-- Debut de la list 2 -->
                     <div class="item__list2">
                         <ul class="item__ul1">
-                            <li><a href="#"><i class="fa-solid fa-gear"></i><span>Paramètres du compte</span></a></li>
+                            <li><a href="param-compte.html"><i class="fa-solid fa-gear"></i><span>Paramètres du compte</span></a></li>
                             <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Déconnexion</span></a> </li>
 
                         </ul>
@@ -64,7 +64,7 @@
                     </svg>
                 </div>
                 <div class="avatar">
-                    <img src="Logo/avatar.jpg" alt="Avatar d'utilisateur">
+                    <a href="index.html"><img src="Logo/avatar.jpg" alt="Avatar d'utilisateur"></a>
                 </div>
                 <!-- Fin des image a droite -->
 
@@ -73,92 +73,32 @@
             <div class="box__suivi">
                 <!-- debut du box -->
 
-                <div class="table__box" style="overflow-x:auto;">
-                    <table>
-                        <thead>
+                <div class="table__box">
+                    <table class="tab__suivi">
+                     <tbody>
+
+                     </tbody>
+                        <thead id="scr">
+                            <th class="echa" colspan="4"><h3> Suivi des échantillons</h3></th>
                             <th ></th>
-                            <th colspan="2"style="font-size:26px;font-weight: 500;letter-spacing: 1px;">Suivi des échantillons</th>
-                            <th></th>
+                            <th><input id="input_suivi" type="search-box" class=" search" aria-label="Search bar"placeholder="&#xF52A;" 
+                                style="font-family: bootstrap-icons;"></label></th>
                             <th ></th>
                             <th ></th>
+                            <tr class="suivi-titre-head">
+                                <td id="suivi_lot_title" class="head_lot">Lot</td>
+                                <td id="suivi_etat_title" class="head_etat">Etat</td>
+                                <td id="suivi_prevue_title" class="head_prevue">Date prévue</td>
+                                <td id="suivi_rapport_title" class="head_rapport">Rapport</td>
+                                <td id="suivi_clique_title" class="head_cliquez">Cliquez pour voir le rapport</td>
+                            </tr>
                         </thead>
-                        <tr>
-                            <td style="font-size: 18px;width: 49rem;text-align: center;font-weight: bold;border-right: solid 1px;">Lot</td>
-                            <td style="font-size: 18px;width: 25em;padding: 0 40px 0 0;text-align: center;font-weight: bold;border-right: solid 1px;">Etat</td>
-                            <td style="font-size: 18px;width:10em ;text-align: center;font-weight: bold;border-right: solid 1px;">Date prévue</td>
-                            <td style="font-size: 18px;width:rem ;padding: 0 45px ;text-align: center;font-weight: bold;border-right: solid 1px;">Rapport</td>
-                            <td  style="font-size: 18px;width:30rem ;text-align: center;font-weight: bold;">Cliquez pour voir le rapport</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">TE202303001</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">Reçu</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">12/03/2023</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">Non disponible</td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com"style="">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">E20230223</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">TE20230190</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class=" btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">Carbonate</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">Chlourire</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">CO2 libre</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">Conductivité electrique</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">pH/Temperature</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">Couleur Brute</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">Cyanure libre</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
+                   <tbody>
+
+                   </tbody>
+                      
+                        
+                       
                     </table>
 
                     
@@ -173,6 +113,7 @@
     </div>
 
     <!-- Fin du conainer général -->
+    <script src="javascript/suivi_tab.js"></script>
 </body>
 
 </html>
