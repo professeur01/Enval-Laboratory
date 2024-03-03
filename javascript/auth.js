@@ -1,3 +1,4 @@
+
 export const user = [
   {
     id: 1,
@@ -58,6 +59,9 @@ linkConnect.addEventListener("click", () => {
   );
 
   if (userFind) {
+      // Stocker les informations de l'utilisateur dans le localStorage
+      localStorage.setItem("loggedInUser", JSON.stringify(userFind));
+
     location.href = "/dachboard.html";
   } else {
     loginAttempts++;
@@ -169,4 +173,3 @@ linkConnect.addEventListener("click", () => {
 
 
 });
-
